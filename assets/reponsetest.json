@@ -1,0 +1,49 @@
+{
+    "questions": [
+      {
+        "iD": 1,
+        "response": {
+          "val1": true,
+          "val2": false
+        }
+      },
+     
+      {
+        "iD": 2,
+        "response": {
+          "val1": false,
+          "val2": false,
+          "val3": false,
+          "val4": true,
+          "val5": false
+        }
+      },
+      {
+        "iD": 3,
+        "response": {
+          "val": 7
+        }
+      },
+      {
+        "iD": 4,
+        "response": {
+          "val": -3
+        }
+      },
+      {
+        "iD": 5,
+        "response": {
+          "val1": false,
+          "val2": true
+        }
+      },
+      {
+        "iD": 6,
+        "response": {
+          "row1": [false, true, false],
+          "row2": [true, false, false],
+          "row3": [false, false, true]
+        }
+      }
+    ]
+  }

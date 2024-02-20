@@ -1,0 +1,33 @@
+{
+    "userID": "Juju",
+    "title": "Question of Life",
+    "questions": [
+        {
+            "iD": 1,
+            "type": "analog",
+            "question": "T aimes Squeezie ?",
+            "spec": {
+                "subtype": 2
+            },
+            "next": 2
+        },
+        {
+            "iD": 2,
+            "type": "analog",
+            "question": "Humeur ?",
+            "spec": {
+                "subtype": 5
+            },
+            "next": 3
+        },
+        {
+            "iD": 3,
+            "type": "analog",
+            "question": "RE ?",
+            "spec": {
+                "subtype": 2
+            },
+            "next": -1
+        }
+    ]
+}

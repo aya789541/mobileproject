@@ -1,0 +1,78 @@
+{
+    "userID": "78901",
+    "title": "Questionnaire sur les Activités parascolaires",
+    "image": "",
+    "questions": [
+      {
+        "iD": 1,
+        "type": "dichotomique",
+        "question": "Participez-vous actuellement à des activités au sein de l'école?",
+        "spec": {
+          "defaultValue1": "Oui",
+          "defaultValue2": "Non"
+        },
+        "next": 2
+      },
+      {
+        "iD": 2,
+        "type": "matrix",
+        "question": "Comment évaluez-vous l'impact des activités actuelles sur votre bien-être ?",
+        "spec": {
+          "rows": ["Épanouissement personnel", "Réduction du stress", "Amélioration des compétences sociales"],
+          "columns": ["Aucun impact", "Modéré", "Considérable"]
+        },
+        "next": 3
+      },
+      {
+        "iD": 3,
+        "type": "semantic",
+        "question": "Pensez-vous que les activités actulelles répondent à vos intérêts ?",
+        "spec": {
+          "defaultValue": 3
+        },
+        "next": 4
+      },
+      {
+        "iD": 4,
+        "type": "analog",
+        "question": "Comment évaluez-vous l'organisation des événements proposés par les clubs?",
+        "spec": {
+          "subtype": 5
+        },
+        "next": 5
+      },
+      {
+        "iD": 5,
+        "type": "choice",
+        "question": "Quelles suggestions préférez-vous pour de nouvelles activités dans le futur?",
+        "spec": {
+          "options": [ "🎨 Ateliers artistiques",
+          "💃 Activités culturelles",
+          "🏀 Sports et loisirs",
+          "🎲 Événements sociaux",
+          "📚 Club de lecture"]
+        },
+        "next": 6
+      },
+      {
+        "iD": 6,
+        "type": "analog",
+        "question": "À quel point pensez-vous que la communication sur les activités est efficace actuellement?",
+        "spec": {
+          "subtype": 2,
+          "defaultValue": 3
+        },
+        "next": 7
+      },
+      {
+        "iD": 7,
+        "type": "text",
+        "question": "Comment suggéreriez-vous d'améliorer l'expérience des activités étudiantes à l'école?",
+        "spec": {
+          "subtype": "multiRowText"
+        },
+        "next": -1
+      }
+    ]
+  }
+  

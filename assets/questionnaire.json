@@ -1,0 +1,87 @@
+{
+  "userID": "98765",
+  "title": "Questionnaire Étudiant",
+  "questions": [
+    {
+      "iD": 1,
+      "type": "text",
+      "question": "Quel est votre email étudiant? (Pour vous envoyer d'éventuelles informations importantes)",
+      "spec": {
+        "subtype": "email"
+      },
+      "next": 2
+    },
+    {
+      "iD": 2,
+      "type": "dichotomous",
+      "question": "Avez-vous déjà participé à un projet de recherche à l'université?",
+      "spec": {},
+      "next": 3
+    },
+    {
+      "iD": 3,
+      "type": "matrix",
+      "question": "Comment évaluez-vous l'importance des activités parascolaires dans votre parcours académique?",
+      "spec": {
+        "rows": ["Associations étudiantes", "Stages", "Projets personnels"],
+        "columns": ["Pas important du tout", "Moyennement important", "Très important"]
+      },
+      "next": 4
+    },
+    {
+      "iD": 4,
+      "type": "semantic",
+      "question": "Comment décririez-vous votre expérience avec les cours en ligne?",
+      "spec": {},
+      "next": 5
+    },
+    {
+      "iD": 5,
+      "type": "analog",
+      "question": "À quel point estimez-vous votre niveau de stress pendant la période des examens?",
+      "spec": {},
+      "next": 6
+    },
+    {
+      "iD": 6,
+      "type": "choice",
+      "question": "Quelle est votre méthode préférée pour la prise de notes en cours?",
+      "spec": {
+        "options": ["Manuscrites", "Électroniques", "Prises de vue des diapositives"]
+      },
+      "next": 7
+    },
+    {
+      "iD": 7,
+      "type": "analog",
+      "question": "Évaluez votre niveau de satisfaction vis-à-vis des ressources disponibles à la bibliothèque (de 1 à 5, 5 étant très satisfait).",
+      "spec": {},
+      "next": 8
+    },
+    {
+      "iD": 8,
+      "type": "text",
+      "question": "Quelle est votre principale source de motivation pour réussir vos études?",
+      "spec": {
+        "subtype": "singleRow"
+      },
+      "next": 9
+    },
+    {
+      "iD": 9,
+      "type": "numeric",
+      "question": "Combien d'heures en moyenne consacrez-vous chaque semaine aux études?",
+      "spec": {},
+      "next": 10
+    },
+    {
+      "iD": 10,
+      "type": "multipleChoice",
+      "question": "Parmi les matières que vous avez étudiées jusqu'à présent, laquelle préférez-vous?",
+      "spec": {
+        "options": ["Mathématiques", "Informatique", "Langues étrangères", "Sciences humaines", "Autre"]
+      },
+      "next": -1
+    }
+  ]
+}

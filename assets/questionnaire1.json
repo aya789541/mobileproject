@@ -1,0 +1,35 @@
+{
+    "userID": "Amandine",
+    "title": "Associatif Enseirb",
+    "questions": [
+        {
+            "iD": 1,
+            "type": "analog",
+            "question": "Un avis sur la Cafet ?",
+            "spec": {
+                "subtype": 5
+            },
+            "next": 2
+        },
+        {
+            "iD": 2,
+            "type": "analog",
+            "question": "Votre ressenti sur le BDE ?",
+            "spec": {
+                "subtype": 5
+            },
+            "next": 3
+        },
+        {
+            "iD": 3,
+            "type": "semantic",
+            "question": "L'Enseirb sur 10 ?",
+            "spec": {
+                "min": 0,
+                "max": 10,
+                "div": 10
+            },
+            "next": -1
+        }
+    ]
+}

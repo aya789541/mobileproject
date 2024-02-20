@@ -1,0 +1,105 @@
+{
+    "userID": "Walid",
+    "title": "Questionnaire sur la Cyber Sécurité",
+    "questions": [
+      {
+        "iD": 1,
+        "type": "dichotomique",
+        "question": "Utilisez-vous un gestionnaire de mots de passe pour sécuriser vos comptes en ligne ?",
+        "spec": {
+          "defaultValue1": "Oui",
+          "defaultValue2": "Non"
+        },
+        "next": 2
+      },
+      {
+        "iD": 2,
+        "type": "matrix",
+        "question": "Évaluez la sécurité des aspects suivants de votre réseau domestique :",
+        "spec": {
+          "rows": ["Protection du réseau", "Mises à jour régulières", "Utilisation d'antivirus"],
+          "columns": ["Faible", "Moyen", "Élevé"]
+        },
+        "next": 3
+      },
+      {
+        "iD": 3,
+        "type": "choice",
+        "question": "Quels types de menaces de sécurité connaissez-vous ?",
+        "spec": {
+          "options": ["Malware",
+          "Phishing",
+          "Ingénierie sociale",
+          "Déni de service"]
+        },
+        "next": 4
+      },
+      {
+        "iD": 4,
+        "type": "semantic",
+        "question": "Sur une échelle de 1 à 4, à quel point estimez-vous votre niveau de connaissance en matière de sécurité informatique ?",
+        "spec": {
+          "defaultValue": 3
+        },
+        "next": 5
+      },
+      {
+        "iD": 5,
+        "type": "text",
+        "question": "Quelles sont vos principales préoccupations concernant la sécurité en ligne ?",
+        "spec": {
+          "subtype": "multiRowText"
+        },
+        "next": 6
+      },
+      {
+        "iD": 6,
+        "type": "text",
+        "question": "Combien d'appareils connectés sont actuellement sur votre réseau domestique ?",
+        "spec": {
+          "subtype": "numeric",
+          "defaultValue": 0
+        },
+        "next": 7
+      },
+      {
+        "iD": 7,
+        "type": "text",
+        "question": "Veuillez entrer votre adresse e-mail pour recevoir des mises à jour de sécurité :",
+        "spec": {
+          "subtype": "email"
+        },
+        "next": 8
+      },
+      {
+        "iD": 8,
+        "type": "dichotomique",
+        "question": "Avez-vous déjà été victime d'une violation de données en ligne ?",
+        "spec": {
+          "defaultValue1": "Oui",
+          "defaultValue2": "Non"
+        },
+        "next": 9
+      },
+      {
+        "iD": 9,
+        "type": "matrix",
+        "question": "Comment évaluez-vous la protection de vos données personnelles en ligne :",
+        "spec": {
+          "rows": ["Données financières", "Données personnelles", "Mots de passe"],
+          "columns": ["Insuffisante", "Acceptable", "Très bonne"]
+        },
+        "next": 10
+      },
+      {
+        "iD": 10,
+        "type": "analog",
+        "question": "À quel point vous sentez-vous en sécurité lors de l'utilisation d'un réseau Wi-Fi public ?",
+        "spec": {
+          "subtype": 2
+        },
+        "next": -1
+      }
+    ]
+  }
+  
